@@ -11,7 +11,8 @@ class StaticPagesController < ApplicationController
     #app/views/static_pages/about.html.erb
   end
   
-  #演習
+  #演習,第5章
   def contact
+     #app/views/static_pages/contact.html.erb
   end
 end
