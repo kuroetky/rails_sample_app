@@ -3,7 +3,9 @@ class PictureUploader < CarrierWave::Uploader::Base
   process resize_to_limit: [400, 400]
 
   if Rails.env.production?
-    storage :fog
+    #storage :fog
+    #暫定的にheorku上にファイルを保存する仕様に変更
+    storage :file
   else
     storage :file
   end
